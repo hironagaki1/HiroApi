@@ -23,7 +23,7 @@ jobs:
 
       # Publish the site
       - name: Publish
-        run: dotnet publish HiroWebPage.sln -c Release -o public -p:GHPages=true
+        run: dotnet publish HiroWebPage.sln -c Release -o public -p:GHPages=true -p:GHPagesBase=documentations
 
       # Deploy the site
       - name: Deploy
